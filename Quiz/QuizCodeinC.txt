@@ -1,0 +1,355 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main(){
+    int question_number,ans,score=0,number;
+    printf("\n////////////////////////////////////////// WANNA PLAY A FUN QUIZ ////////////////////////////\n");
+    do{
+    printf("\nLet's start quiz:\nPress any number to start:\n");
+    scanf("%d",&question_number);
+    question_number=1;
+    switch(question_number){
+        case 1:
+             printf("Q.1.How many times you can subtract 5 from 25?\n");
+             printf("1) Five \n");
+             printf("2) Once \n");
+             printf("3) Six \n");
+             printf("4) Sorry,I can't do that.My Maths is weak.\n");
+             printf("Enter your choice: ");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==2)
+             {
+                 score+=4;
+                 printf("Good\n");
+                 printf("Your total score is:%d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.");
+                 printf("\nYour total score is : %d",score);
+             }
+             }
+             else{
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 2:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.2.Imagine you are in a sinking rowboat surrounded by sharks. How would you survive?.\n");
+             printf("1) I would kill the shark.\n");
+             printf("2) Try to be in the boat.\n");
+             printf("3) I would stop Imagining.\n");
+             printf("4) Shark will decide what to with me.\n");
+             printf("Enter your choice:");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==3)
+             {
+                 score+=4;
+                 printf("You are going awesome.\n");
+                 printf("Your total score is: %d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("\nYour total score is:%d",score);
+                 }
+             }
+             }
+             else
+             {
+                printf("\nYou've skipped the question.No points for skipping.\n");
+                printf("Your total score is : %d",score); 
+             }
+             case 3:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.3.If you are in a dark room with a candle,a wood stove and a gas lamp.\n");
+             printf("You have one match,so what would you light first?");
+
+             printf("\n1) A candle \n");
+             printf("2) A match \n");
+             printf("3) A gas Lamp \n");
+             printf("4) Have a bulb in your room buddy\n");
+             printf("Enter your choice:");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==2)
+             {
+                 score+=4;
+                 printf("\nGreat yov've guessed it right\n");
+                 printf("Your total score is: %d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.\n");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("\nYour total score is:%d",score);
+                 }
+                
+             }
+             }
+             else {
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 4:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.4.Bay of Bengal is in which state?\n");
+             printf("1) West Bangal\n");
+             printf("2) Andhra Pradesh\n");
+             printf("3) Haryana\n");
+             printf("4) Liquid state\n");
+             printf("Enter your choice: ");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==4)
+             {
+                 score+=4;
+                 printf("Awesome ,Keep Going.\n");
+                 printf("Your total score is: %d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("\nYour total score is:%d",score);
+                 }
+             }
+             }
+             else {
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 5:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.5.Which is heavier: 100 pounds of steel or 100 pounds of feathers?\n");
+             printf("1) Feathers\n");
+             printf("2) Steel\n");
+             printf("3) Both are same in weight\n");
+             printf("4) I need a balance\n");
+             printf("Enter your choice: ");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==3)
+             {
+                 score+=4;
+                 printf("You are doing great!\n");
+                 printf("Your total score is: %d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.\n");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("\nYour total score is:%d",score);
+                 }
+             }
+             }
+             else
+             {
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 6:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.6.How many things are in a baker's dozen?\n");
+             printf("1) 5\n");
+             printf("2) 9\n");
+             printf("3) 12\n");
+             printf("4) 13\n");
+             printf("Enter your choice:");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==4)
+             {
+                 score+=4;
+                 printf("Amazing!\n");
+                 printf("Your total score is: %d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("\nYour total score is:%d",score);
+                 }
+             }
+             }
+             else
+             {
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 7:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.7.Is it legal for a person living in Texas to be buried in Pennsylvania?\n");
+             printf("1) Yes \n");
+             printf("2) No,It is illigal to burry someone alive \n");
+             printf("Enter your choice:");
+             scanf("%d",&ans);
+             if(ans<3){
+             if(ans==2)
+             {
+                 score+=4;
+                 printf("Gonna rock this Quiz!\n");
+                 printf("Your total score is: %d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("\nYour total score is:%d",score);
+                 }
+             }
+             }
+             else {
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 8:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.8.How much dirt is in a hole that 18 feet deep and 4 feet wide?\n");
+             printf("1) 100 pounds\n");
+             printf("2) 72 pounds\n");
+             printf("3) 14 pounds\n");
+             printf("4) None \n");
+             printf("Enter your choice:");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==4)
+             {
+                 score+=4;
+                 printf("Just few more quetions to win!\n");
+                 printf("Your total score is: %d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("\nYour total score is:%d",score);
+                 }
+             }
+             }
+             else {
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 9:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.9.What is the beginning of eternity, the end of time, the beginning of every end, and the end of every place?\n");
+             printf("1) I wasn't born then\n");
+             printf("2) Wanna skip the question\n");
+             printf("3) Lol ! It's letter 'E'\n");
+             printf("4) I bet you don't know either.\n");
+             printf("Enter your choice: ");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==3)
+             {
+                 score+=4;
+                 printf("Great you have guessed it right\n");
+                 printf("Your total score is :%d",score);
+             }
+             else{
+                 printf("Sorry wrong Answer.");
+                 if(score>0){
+                     printf("\nYour total score is:%d",--score);
+                 }else{
+                 printf("Your total score is:%d",score);
+                 }
+             }
+             }
+             else
+             {
+                 printf("\nYou've skipped the question.No points for skipping.\n");
+                 printf("Your total score is : %d",score);
+             }
+             case 10:
+             printf("\n------------------------------------------------------------------------------\n");
+             printf("Q.10.How many times does the alphabet ‘a’ appear from 0-100?\n");
+             printf("1) 12 \n");
+             printf("2) 21\n");
+             printf("3) 10 \n");
+             printf("4) 0 \n");
+             printf("Enter your choice: ");
+             scanf("%d",&ans);
+             if(ans<5){
+             if(ans==4)
+             {
+                 score+=4;
+                 printf("\nYou have completed the quiz successfully");
+                 printf("\nYour total score is:%d",score);
+             }
+             else{
+                 printf("\n ********** BETTER LUCK NEXT TIME ***********\n");
+                 printf("Your total score is:%d",score);
+                 }
+             }
+             else{
+                 printf("\nWARNING :You can't skip the last question.Try it again.\n");
+                 printf("Q.10.How many times does the alphabet ‘a’ appear from 0-100?\n");
+                 printf("1) 12 \n");
+                 printf("2) 21\n");
+                 printf("3) 10 \n");
+                 printf("4) 0 \n");
+                 printf("Enter your choice: ");
+                 scanf("%d",&ans);
+                 if(ans==4)
+             {
+                 score+=4;
+                 printf("\nYou have completed the quiz successfully");
+                 printf("\nYour total score is:%d",score);
+             }
+             else{
+                 printf("\n ********** BETTER LUCK NEXT TIME ***********\n");
+                 printf("Your total score is:%d",score);
+                 }
+             }
+                 
+             
+             
+                 
+             
+             
+             
+             default:
+             
+             //printf("\n\nYour total score is:%d",score);
+             if(score<10){
+                 printf("\nYOU NEED IMPROVEMENT.");
+             }
+             else if(score>10 && score<20)
+             {
+                 printf("\nYOU KNOW COMMON SENSE IS NOT SO COMMON.\n");
+             }
+             else if(score>=20 && score<30)
+             {
+                 printf("\nYOUR COMMON SENSE IS SATISFACTORY.\n");
+             }
+             else if(score>=30 && score<35)
+             {
+                 printf("YOU HAVE AWESOME COMMON SENSE.\n");
+             }
+             else
+             {
+                 printf("YOU'VE MASTERED THE COMMON SENSE.\n");
+             }
+             
+    }
+    printf("\n\n///////////////////////////// WANNA PLAY AGAIN! ///////////////////////////////////\n");
+    printf("\nEnter 1.to Restart and 2.To leave the Quiz\n");
+    scanf("%d",&number);
+    if(number==2)
+    {
+        exit(0);
+    }
+    
+    }while(1);
+    
+    
+}
